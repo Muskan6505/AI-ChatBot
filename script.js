@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         catch(error){
             console.log(error);
+            handleAiChatResponse("Sorry, the AI service is currently overloaded. Please try again later.");
         }
         finally{
             chatArea.scrollTo({top:chatArea.scrollHeight, behavior:"smooth"})

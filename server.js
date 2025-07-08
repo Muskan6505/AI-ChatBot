@@ -15,7 +15,7 @@ app.post('/api/gemini', async (req, res) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-goog-api-key': process.env.GEMINI_API_KEY // Make sure this is set in your .env
+                'X-goog-api-key': process.env.GEMINI_API_KEY 
             },
             body: JSON.stringify(req.body)   
         });
